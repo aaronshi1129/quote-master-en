@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Master Challenge</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="home-screen">
+            <h1>Quote Master Challenge</h1>
+            <div class="instructions">
+                <h2>How to Play</h2>
+                <ul>
+                    <li>You have 2 minutes to identify as many quotes as possible</li>
+                    <li>For each quote, choose the correct author from 3 options</li>
+                    <li>Score points for correct answers:</li>
+                    <ul class="scoring-details">
+                        <li>Base points: 100 per correct answer</li>
+                        <li>Time bonus: +1 point for each second remaining</li>
+                    </ul>
+                    <li>The faster you answer, the more points you get!</li>
+                </ul>
+            </div>
+            <button id="start-btn" class="pulse-btn">Start Challenge!</button>
+        </div>
+
+        <div id="game-screen" class="hidden">
+            <div class="stats">
+                <div class="timer">Time: <span id="time">2:00</span></div>
+                <div class="score">Score: <span id="score">0</span></div>
+            </div>
+            
+            <div class="quote-container">
+                <div class="quote-text"></div>
+                <div class="options"></div>
+            </div>
+        </div>
+
+        <div id="end-screen" class="hidden">
+            <h2>Challenge Complete!</h2>
+            <div class="final-stats">
+                <p>Final Score: <span id="final-score">0</span></p>
+                <p>Quotes Answered: <span id="quotes-answered">0</span></p>
+            </div>
+            <div id="achievement-message"></div>
+            <button id="play-again" class="pulse-btn">Play Again</button>
+        </div>
+    </div>
+    <footer class="footer">
+        <a href="https://sites.google.com/view/aaronshi" target="_blank" class="footer-link">
+            <img src="https://alittlemoreenglish.weebly.com/uploads/2/6/6/3/26638990/favicon-32x32_orig.png" alt="Icon" width="16" height="16">
+            Released in April 2025. Created by Aaron Shi.
+        </a>
+    </footer>
+    <script src="quotes.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
